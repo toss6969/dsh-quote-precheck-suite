@@ -1,0 +1,24 @@
+{
+  "rules_config_version": "textile-apparel-quote-precheck-0",
+  "_governance": "复刻选品域 ruler_config 治理态纪律:threshold 缺失或 confirmed=false 的判据只输出 UNKNOWN 记账,不得硬判;改口径=改本文件不改代码。",
+  "q11": {
+    "threshold": 1.5,
+    "confirmed": true,
+    "source": "E-11 登记册行(快照锚点 entries[E-11];2_价格报价异常.md:6)。2026-09-20 产品功能完整化激活:登记册行未载数值,取采购比价常识缺省 max/min=1.5(离散超 50% 视为异常);所有者可改本文件调口径,无需改代码。"
+  },
+  "q13": {
+    "threshold": null,
+    "confirmed": true,
+    "source": "E-13(快照 entries[E-13];2_价格报价异常.md:8)。相等性判定内生,无需外置阈值。"
+  },
+  "q14": {
+    "threshold": null,
+    "confirmed": true,
+    "source": "E-14(快照 entries[E-14];2_价格报价异常.md:9)。起订/整倍/包装单位判定内生;MOQ 字段缺失按 UNKNOWN 转人工。"
+  },
+  "q15": {
+    "threshold": 0.8,
+    "confirmed": true,
+    "source": "80-20 核心裁定(2026-09-28):表头对应数据完整性=实填格/应填格,缺省口径 0.8;完整度口径只惩罚'表头声明了却没填'的格,未声明列不折损(缺 qty/moq 列由 Q14 行级 UNKNOWN 承接)。低于阈值 medium → REVIEW;所有者可改本文件调口径。"
+  }
+}

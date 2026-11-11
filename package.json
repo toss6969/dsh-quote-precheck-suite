@@ -1,0 +1,48 @@
+{
+  "name": "dsh-quote-precheck-suite",
+  "version": "0.1.0",
+  "description": "22 个行业报价预审技能：多供应商报价（文本PDF/XLSX/CSV）清洗归一、横向拉平比对、价格异常预审；单位口径不可比、扫描件或不可解析件显式转人工，产出预审报告，不替用户拍板选供应商。",
+  "type": "module",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "skills",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "cordis",
+    "skills",
+    "quote",
+    "procurement",
+    "报价",
+    "采购",
+    "比价"
+  ],
+  "author": {
+    "name": "linksass",
+    "email": "linksass@126.com"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=20",
+    "dsh": ">=0.2.0-rc.2 || >=0.2.1-rc.2 || >=0.2.2-rc.1"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toss6969/dsh-quote-precheck-suite.git"
+  },
+  "homepage": "https://github.com/toss6969/dsh-quote-precheck-suite#readme",
+  "bugs": {
+    "url": "https://github.com/toss6969/dsh-quote-precheck-suite/issues"
+  }
+}
